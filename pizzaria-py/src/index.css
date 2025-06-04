@@ -1,0 +1,106 @@
+body {
+  background-image: url('fundo.png'); /* Use o caminho simples */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro para destacar o conteúdo */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header h1 {
+  text-align: center;
+  color: #FF6347; /* Cor laranja vibrante */
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="text"] {
+  padding: 10px;
+  border: 2px solid #FF6347;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #FF6347; /* Cor vibrante de laranja */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.total p {
+  margin: 5px 0;
+}
+
+.total h2 {
+  font-size: 2rem;
+  color: #FFD700; /* Cor dourada */
+}
+
+/* Estilizando o formulário e a tela final */
+form select, form input {
+  width: 100%;
+}
+
+form button {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    width: 100%;
+  }
+}
